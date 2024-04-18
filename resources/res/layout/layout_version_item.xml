@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xiaopeng.xui.widget.XConstraintLayout android:layout_width="1381dp" android:layout_height="wrap_content">
+        <com.xiaopeng.xui.widget.XImageView android:id="@+id/iv_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_xlogo" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <com.xiaopeng.xui.widget.XImageView android:id="@+id/iv_right" android:padding="28dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_open" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_title_03_size" android:textColor="@color/x_theme_text_01" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="50dp" app:layout_constraintStart_toEndOf="@+id/iv_left" app:layout_constraintTop_toTopOf="0"/>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_03_size" android:textColor="@color/x_theme_text_04" android:id="@+id/tv_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/tv_title" app:layout_constraintTop_toBottomOf="@+id/tv_title"/>
+    </com.xiaopeng.xui.widget.XConstraintLayout>
+    <com.xiaopeng.xui.widget.XLinearLayout android:gravity="top" android:orientation="horizontal" android:id="@+id/ll_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <WebView android:id="@+id/wv_content" android:scrollbars="none" android:layout_width="826dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/version_content_top_margin" android:layout_marginStart="106dp"/>
+        <com.xiaopeng.ota.view.SpreadListView android:id="@+id/lv_thumb_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/version_content_top_margin" android:divider="@android:color/transparent" android:layout_marginStart="60dp"/>
+    </com.xiaopeng.xui.widget.XLinearLayout>
+</merge>

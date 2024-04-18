@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xiaopeng.xui.widget.XRelativeLayout android:id="@+id/rl_media_container" android:background="@drawable/x_bg_app_list" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.xiaopeng.ota.view.RoundImageView android:layout_gravity="center" android:id="@+id/iv_media" android:layout_width="match_parent" android:layout_height="match_parent" app:radius="@dimen/photo_radius" app:type="sweep"/>
+        <com.xiaopeng.xui.widget.XImageButton android:id="@+id/ib_back" android:layout_marginTop="@dimen/title_button_margin" android:layout_marginStart="@dimen/title_button_margin" style="@style/XButton.Icon.Large.Back"/>
+    </com.xiaopeng.xui.widget.XRelativeLayout>
+</merge>

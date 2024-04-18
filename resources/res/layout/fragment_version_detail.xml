@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <com.xiaopeng.xui.widget.XLinearLayout android:gravity="start|top" android:orientation="vertical" android:id="@+id/ll_content" android:background="@drawable/x_list_item_selector" android:layout_width="1476dp" android:layout_height="710dp" android:layout_marginTop="@dimen/fragment_title_height" android:layout_marginBottom="84dp" android:layout_marginStart="@dimen/version_start_margin" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="8dp" android:scrollbarThumbVertical="@drawable/x_thumb_scrollbar_vertical" android:id="@+id/rv_version_info" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.xiaopeng.xui.widget.XLinearLayout>
+    <include layout="@layout/layout_view_media"/>
+</com.xiaopeng.xui.widget.XConstraintLayout>

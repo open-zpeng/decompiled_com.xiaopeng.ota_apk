@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_item_container" android:background="@drawable/x_list_item_selector" android:paddingTop="@dimen/version_content_padding_top" android:paddingBottom="@dimen/version_content_padding_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/version_content_padding_start" android:paddingEnd="@dimen/version_content_padding_end">
+    <include layout="@layout/layout_version_item"/>
+</com.xiaopeng.xui.widget.XLinearLayout>

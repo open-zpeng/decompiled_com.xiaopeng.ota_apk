@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XTextView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/tv_title" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="340dp" android:layout_height="116dp" android:includeFontPadding="false" android:drawablePadding="24dp" android:paddingStart="65dp" style="@style/XCatalog.Item"/>

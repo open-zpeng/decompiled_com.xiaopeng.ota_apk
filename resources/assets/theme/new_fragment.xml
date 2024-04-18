@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+    <view attr="background" id="rl_media_container" root="fragment_new" value="@drawable/x_bg_app_list" />
+</theme>

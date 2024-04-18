@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="change_dialog_noon_reminder_today">
+        <item>当日凌晨</item>
+        <item>当日早上</item>
+        <item>当日下午</item>
+        <item>当日傍晚</item>
+        <item>当日晚上（PM）</item>
+    </array>
+    <array name="change_dialog_noon_reminder_tomorrow">
+        <item>次日凌晨</item>
+        <item>次日早上</item>
+        <item>次日下午</item>
+        <item>次日傍晚</item>
+        <item>次日晚上</item>
+    </array>
+    <array name="x_quick_side_bar_letters">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+        <item>#</item>
+    </array>
+</resources>

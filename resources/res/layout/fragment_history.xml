@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <ScrollView android:scrollbarThumbVertical="@drawable/x_thumb_scrollbar_vertical" android:scrollbars="vertical" android:layout_width="1476dp" android:layout_height="796dp" android:layout_marginTop="@dimen/fragment_title_height" android:overScrollMode="never" android:layout_marginStart="@dimen/version_start_margin" android:layout_marginEnd="@dimen/version_end_margin" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.xiaopeng.xui.widget.XLinearLayout android:gravity="start|top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_version_list" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </com.xiaopeng.xui.widget.XLinearLayout>
+    </ScrollView>
+    <include layout="@layout/layout_view_media"/>
+</com.xiaopeng.xui.widget.XConstraintLayout>

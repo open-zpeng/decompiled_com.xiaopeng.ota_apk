@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_schedule_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="35sp" android:textColor="@color/x_theme_text_01" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="240dp" android:text="@string/schedule_subtitle" android:lineSpacingMultiplier="1.04"/>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="35sp" android:textColor="@color/x_theme_text_01" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/schedule_desc" android:lineSpacingMultiplier="1.04"/>
+    <com.xiaopeng.xui.widget.timepicker.XTimePicker android:layout_gravity="center_horizontal" android:id="@+id/tp_schedule_time" android:layout_width="wrap_content" android:layout_height="380dp" android:layout_marginTop="64dp"/>
+    <com.xiaopeng.xui.widget.XButton android:layout_gravity="center_horizontal" android:id="@+id/btn_schedule" android:layout_width="504dp" android:layout_height="66dp" android:layout_marginTop="375dp" android:text="@string/button_ok" style="@style/XButton.Real.Mid.Positive"/>
+    <com.xiaopeng.xui.widget.XButton android:layout_gravity="center_horizontal" android:id="@+id/btn_cancel_schedule" android:layout_marginTop="78dp" android:text="@string/schedule_cancel" style="@style/XButton.Flat.Large.Positive"/>
+</com.xiaopeng.xui.widget.XLinearLayout>

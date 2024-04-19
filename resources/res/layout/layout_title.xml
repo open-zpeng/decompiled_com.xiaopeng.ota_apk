@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/fragment_title_height">
+    <com.xiaopeng.xui.widget.XImageButton android:gravity="center" android:layout_gravity="center" android:id="@+id/title_ib_close" android:src="@drawable/x_ic_small_close" android:layout_marginStart="12dp" style="@style/XButton.Icon.Large"/>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_title_02_size" android:textColor="@color/x_theme_text_01" android:gravity="center" android:layout_gravity="center" android:id="@+id/title_tv_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="92dp"/>
+</com.xiaopeng.xui.widget.XLinearLayout>

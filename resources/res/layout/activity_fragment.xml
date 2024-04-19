@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.xui.widget.XFrameLayout android:id="@+id/fl_fragment_container" android:background="@drawable/x_bg_app_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.xiaopeng.xui.widget.XLinearLayout>

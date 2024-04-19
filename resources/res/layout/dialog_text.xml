@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/font_dialog_body_size" android:textColor="@color/x_theme_text_02" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1"/>
+</com.xiaopeng.xui.widget.XConstraintLayout>

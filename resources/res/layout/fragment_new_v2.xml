@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.xui.widget.XLinearLayout android:layout_width="match_parent" android:layout_height="1455dp" app:layout_constraintBottom_toTopOf="@+id/cl_button_container" app:layout_constraintStart_toStartOf="0">
+        <include layout="@layout/fragment_version_detail_v2"/>
+    </com.xiaopeng.xui.widget.XLinearLayout>
+    <com.xiaopeng.xui.widget.XConstraintLayout android:id="@+id/cl_button_container" android:layout_width="match_parent" android:layout_height="125dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0">
+        <com.xiaopeng.xui.widget.XButton android:textSize="30sp" android:id="@+id/btn_schedule" android:layout_width="365dp" android:layout_height="66dp" android:layout_marginBottom="47dp" android:text="@string/new_schedule_upgrade" android:layout_marginStart="288dp" app:layout_constraintBottom_toBottomOf="@+id/cl_button_container" app:layout_constraintStart_toStartOf="@+id/cl_button_container" style="@style/XButton.Real.Mid.Positive"/>
+        <com.xiaopeng.xui.widget.XButton android:textSize="@dimen/x_font_body_02_size" android:id="@+id/btn_upgrade" android:visibility="gone" android:layout_width="1dp" android:layout_height="1dp" android:layout_marginLeft="1dp" android:text="@string/new_upgrade_now" app:layout_constraintBaseline_toBaselineOf="@+id/btn_schedule" app:layout_constraintStart_toEndOf="@+id/btn_schedule" style="@style/XButton.Ghost.Large.Positive"/>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="26sp" android:textColor="@color/x_theme_text_03" android:id="@+id/tv_schedule_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_schedule_time" android:layout_marginStart="35dp" app:layout_constraintBaseline_toBaselineOf="@+id/btn_schedule" app:layout_constraintStart_toEndOf="@+id/btn_schedule"/>
+    </com.xiaopeng.xui.widget.XConstraintLayout>
+</com.xiaopeng.xui.widget.XConstraintLayout>

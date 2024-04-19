@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" android:versionCode="7143" android:versionName="V1.6.0_20230726165350_Release" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" coreApp="true" package="com.xiaopeng.ota" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="28"/>
+    <permission android:name="com.xiaopeng.permission.OTA_SERVICE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.RECOVERY"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.SUPER_APPLICATION_RUNNING"/>
+    <uses-permission android:name="com.xiaopeng.permission.OTA_SERVICE"/>
+    <uses-permission android:name="com.xiaopeng.permission.CAR_SERVICE"/>
+    <uses-permission android:name="com.xiaopeng.permission.ACTIVITY"/>
+    <uses-permission android:name="com.xiaopeng.permission.SERVICE"/>
+    <uses-permission android:name="com.xiaopeng.permission.BROADCAST"/>
+    <uses-permission android:name="com.xiaopeng.permission.IPC"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.xiaopeng.permission.DATA_SERVICE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="com.xiaopeng.permission.SYSTEM_DELEGATE"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.xiaopeng.ota.App" android:debuggable="true" android:allowBackup="false" android:largeHeap="true" android:supportsRtl="true" android:usesCleartextTraffic="true" android:roundIcon="@mipmap/ic_launcher_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <meta-data android:name="SPEECH_OBSERVER" android:value="com.xiaopeng.ota.SpeechEventObserver"/>
+        <meta-data android:name="SPEECH_EVENTS" android:value="command://gui.ota.page.open|command://gui.otareservation.page.open|is.latest.ota.version"/>
+        <activity android:theme="@style/XAppTheme.XPanel" android:name="com.xiaopeng.ota.activity.FragmentActivity" android:launchMode="singleInstance" android:configChanges="keyboardHidden|keyboard">
+            <meta-data android:name="window_level" android:value="0"/>
+            <meta-data android:name="com.xiaopeng.metadata.activity.flags" android:value="320"/>
+            <intent-filter>
+                <action android:name="com.xiaopeng.ota.main"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/UiDefaultTheme" android:name="com.xiaopeng.ota.activity.CheckActivity" android:launchMode="singleInstance" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc">
+            <meta-data android:name="window_level" android:value="2"/>
+            <meta-data android:name="com.xiaopeng.metadata.activity.flags" android:value="320"/>
+            <meta-data android:name="com.xiaopeng.metadata.activity.level" android:value="2"/>
+        </activity>
+        <activity android:name="com.xiaopeng.ota.activity.PortraitInstallActivity" android:launchMode="singleInstance" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc">
+            <meta-data android:name="window_level" android:value="2"/>
+            <meta-data android:name="com.xiaopeng.metadata.activity.flags" android:value="64"/>
+            <meta-data android:name="com.xiaopeng.metadata.activity.level" android:value="2"/>
+        </activity>
+        <service android:name="com.xiaopeng.ota.system.OtaService" android:permission="com.xiaopeng.permission.OTA_SERVICE" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaopeng.ota.system.OtaService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.xiaopeng.ota.system.SotaService" android:permission="com.xiaopeng.permission.OTA_SERVICE" android:exported="true" android:process=":sota">
+            <intent-filter>
+                <action android:name="com.xiaopeng.ota.system.SotaService"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.xiaopeng.ota.system.OtaBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+                <action android:name="com.android.systemui.intent.action.SYSTEMUI_STARTED"/>
+                <action android:name="com.xiaopeng.intent.action.CLEAN_APP_CACHES"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaopeng.sota.sdk.AppReceiver" android:enabled="true" android:process=":sota">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_CHANGED"/>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="org.eclipse.paho.android.service.MqttService"/>
+        <provider android:name="com.xiaopeng.lib.framework.netchannelmodule.common.ContextNetStatusProvider" android:exported="false" android:authorities="com.xiaopeng.ota.netmodule.provider"/>
+        <provider android:name="com.xiaopeng.lib.apirouter.server.ApiPublisherProvider" android:exported="true" android:authorities="com.xiaopeng.ota.api.publisher"/>
+        <service android:name="com.xiaopeng.lib.framework.ipcmodule.AgentService" android:permission="com.xiaopeng.permission.SERVICE" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaopeng.ipc.AgentService"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

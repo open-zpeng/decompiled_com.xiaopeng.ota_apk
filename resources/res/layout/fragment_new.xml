@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <com.xiaopeng.xui.widget.XLinearLayout android:gravity="start|top" android:orientation="vertical" android:id="@+id/ll_content" android:layout_width="match_parent" android:layout_height="1254dp" android:layout_marginTop="120dp" android:layout_marginStart="40dp" android:layout_marginEnd="40dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="8dp" android:scrollbarThumbVertical="@drawable/x_thumb_scrollbar_vertical" android:id="@+id/rv_version_info" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.xiaopeng.xui.widget.XLinearLayout>
+    <com.xiaopeng.xui.widget.XButton android:textSize="30sp" android:id="@+id/btn_schedule" android:layout_width="344dp" android:layout_height="66dp" android:layout_marginBottom="86dp" android:text="@string/new_schedule_upgrade" android:layout_marginStart="90dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" style="@style/XButton.Real.Mid.Positive"/>
+    <com.xiaopeng.xui.widget.XButton android:id="@+id/btn_upgrade" android:layout_width="344dp" android:layout_height="66dp" android:text="@string/new_upgrade_now" android:layout_marginEnd="90dp" app:layout_constraintBaseline_toBaselineOf="@+id/btn_schedule" app:layout_constraintEnd_toEndOf="0" style="@style/XButton.Ghost.Large.Positive"/>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_03_size" android:textColor="@color/x_theme_text_03" android:id="@+id/tv_schedule_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="29dp" android:text="@string/new_schedule_time" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="@+id/btn_schedule" app:layout_constraintStart_toStartOf="@+id/btn_schedule"/>
+    <include layout="@layout/layout_view_media"/>
+</com.xiaopeng.xui.widget.XConstraintLayout>
